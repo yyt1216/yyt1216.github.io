@@ -308,6 +308,22 @@
   
 
   
+  <div id="gitment-ctn"></div> 
+<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
+<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: "http://yoursite.com/categories/index.html",
+  owner: 'yyt1216',
+  repo: 'https://yyt1216.github.io',
+  oauth: {
+    client_id: '182e1917c01530a5f093',
+    client_secret: 'e515eab6094d29d7ada3c5c1148bda7ecc477161',
+  },
+})
+gitment.render('gitment-ctn')
+</script>
+  
 
 
           </div>
