@@ -9,6 +9,7 @@
   <title>如何个性化自己的hexo博客(主题，音乐，访问量，评论系统等) | yyt的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="在上一篇博文中讲到了如何创建属于我们自己的个人博客，可是觉得太丑了，功能也比较少，这次来让我们个性化一下我们的个人博客。">
+<meta name="keywords" content="博客">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何个性化自己的hexo博客(主题，音乐，访问量，评论系统等)">
 <meta property="og:url" content="http://yoursite.com/2019/05/24/如何个性化自己的hexo博客-主题，音乐，访问量，评论系统等/index.html">
@@ -32,7 +33,7 @@
 <meta property="og:image" content="http://pv4xsmh35.bkt.clouddn.com/15.png">
 <meta property="og:image" content="http://pv4xsmh35.bkt.clouddn.com/16.png">
 <meta property="og:image" content="http://pv4xsmh35.bkt.clouddn.com/17.png">
-<meta property="og:updated_time" content="2019-07-24T07:49:11.038Z">
+<meta property="og:updated_time" content="2019-07-24T07:52:10.222Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何个性化自己的hexo博客(主题，音乐，访问量，评论系统等)">
 <meta name="twitter:description" content="在上一篇博文中讲到了如何创建属于我们自己的个人博客，可是觉得太丑了，功能也比较少，这次来让我们个性化一下我们的个人博客。">
@@ -199,13 +200,14 @@
       
         <p>在上一篇博文中讲到了如何创建属于我们自己的个人博客，可是觉得太丑了，功能也比较少，这次来让我们个性化一下我们的个人博客。</p>
 <a id="more"></a>
+
 <p>如何创建属于自己的个人博客参考： <a href="https://yyt1216.github.io/2019/05/24/%E4%BD%BF%E7%94%A8hexo-github%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" target="_blank" rel="noopener">使用hexo+github搭建属于自己的个人博客（超详细)</a></p>
 <p>我的个人博客，大家可以看看效果： <a href="https://yyt1216.github.io/" target="_blank" rel="noopener">yyt的个人博客</a></p>
 <h2 id="1-更换主题"><a href="#1-更换主题" class="headerlink" title="1.更换主题"></a>1.更换主题</h2><p>首先我们来更换主题，可以在官网中挑选自己喜欢的主题。<a href="https://hexo.io/themes/" target="_blank" rel="noopener"></a></p>
 <p>博主使用的是yilia 地址: <a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="noopener">https://github.com/litten/hexo-theme-yilia</a></p>
 <p>挑选好自己喜爱的博客主题 我们就开始更换吧。</p>
 <p>首先在cmd进入到自己的博客文件夹，例如上一篇文章我们新建了个yyt文件夹 那我们进入yyt文件夹中，</p>
-<p>然后就开始克隆，在命令行输入 git clone <a href="https://github.com/litten/hexo-theme-yilia.git" target="_blank" rel="noopener">https://github.com/litten/hexo-theme-yilia.git</a> themes/yilia</p>
+<p>然后就开始克隆，在命令行输入 <code>git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia</code></p>
 <p><img src="http://pv4xsmh35.bkt.clouddn.com/1.png" alt=" "></p>
 <p>像这样 我们就下载好了。</p>
 <p>然后我们来修改一下我们的主题，打开我们博客根目录的配置文件_config.yml</p>
@@ -285,6 +287,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">博客</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -504,6 +517,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">生活</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">博客</a>
               </li>
             
             <div class="clearfix"></div>
