@@ -157,6 +157,126 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-如何个性化自己的hexo博客-主题，音乐，访问量，评论系统等" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/24/如何个性化自己的hexo博客-主题，音乐，访问量，评论系统等/">如何个性化自己的hexo博客(主题，音乐，访问量，评论系统等)</a>
+    </h1>
+  
+
+        
+        <a href="/2019/05/24/如何个性化自己的hexo博客-主题，音乐，访问量，评论系统等/" class="archive-article-date">
+  	<time datetime="2019-05-24T07:26:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-24</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在上一篇博文中讲到了如何创建属于我们自己的个人博客，可是觉得太丑了，功能也比较少，这次来让我们个性化一下我们的个人博客。</p>
+<p>如何创建属于自己的个人博客参考：<a href="https://yyt1216.github.io/2019/05/24/%E4%BD%BF%E7%94%A8hexo-github%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" target="_blank" rel="noopener"> </a></p>
+<p>我的个人博客，大家可以看看效果：<a href="https://yyt1216.github.io/" target="_blank" rel="noopener"></a></p>
+<h2 id="1-更换主题"><a href="#1-更换主题" class="headerlink" title="1.更换主题"></a>1.更换主题</h2><p>首先我们来更换主题，可以在官网中挑选自己喜欢的主题。<a href="https://hexo.io/themes/" target="_blank" rel="noopener"></a></p>
+<p>博主使用的是yilia 地址: <a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="noopener">https://github.com/litten/hexo-theme-yilia</a></p>
+<p>挑选好自己喜爱的博客主题 我们就开始更换吧。</p>
+<p>首先在cmd进入到自己的博客文件夹，例如上一篇文章我们新建了个yyt文件夹 那我们进入yyt文件夹中，</p>
+<p>然后就开始克隆，在命令行输入 git clone <a href="https://github.com/litten/hexo-theme-yilia.git" target="_blank" rel="noopener">https://github.com/litten/hexo-theme-yilia.git</a> themes/yilia</p>
+<p><img src="http://pv4xsmh35.bkt.clouddn.com/1.png" alt=" "></p>
+<p>像这样 我们就下载好了。</p>
+<p>然后我们来修改一下我们的主题，打开我们博客根目录的配置文件_config.yml</p>
+<p><img src="http://pv4xsmh35.bkt.clouddn.com/2.png" alt=" ">我们吧theme修改成我们选择的主题，例如博主使用的是yilia 那么就修改成 theme: yilia  ,记得: <label style="color:red">后面要加空格</label></p>
+<p>现在我们就已经换上了我们喜爱的主题，我们hexo clean ,hexo g, hexo s预览一下</p>
+<p><img src="http://pv4xsmh35.bkt.clouddn.com/3.png" alt=" "></p>
+<p>我们可以看到主题已经更换成功了。</p>
+<p>个人博客的一些配置在themes\yilia 下的_config.yml 里面有许多配置 大家可以按着自己的需求改（例如头像 网页图标之类的）</p>
+<h2 id="2-文章截断"><a href="#2-文章截断" class="headerlink" title="2.文章截断"></a>2.文章截断</h2><p>我们可以看到 我们的hello world 这篇文章 不需要点进去就已经全部显示了，不便于观看</p>
+<p>我们在我们需要截断的地方加上<code>&lt;!-- more --&gt;</code> 就可以了 例如</p>
+<p><img src="http://pv4xsmh35.bkt.clouddn.com/4.png" alt=" "></p>
+<p>然后我们就可以看到我们的个人博客文章正常显示了</p>
+<p><img src="http://pv4xsmh35.bkt.clouddn.com/5.png" alt=" "></p>
+<h2 id="3-添加音乐功能"><a href="#3-添加音乐功能" class="headerlink" title="3.添加音乐功能"></a>3.添加音乐功能</h2><p>我使用的是网易云音乐网页版，选择自己喜欢的歌，点击生成外链播放器</p>
+<p><img src="http://pv4xsmh35.bkt.clouddn.com/6.png" alt=" "></p>
+<p>然后大家自己配置好 大小什么的</p>
+<p><img src="http://pv4xsmh35.bkt.clouddn.com/7.png" alt=" "></p>
+<p>复制这段代码，大家可以加在自己喜欢的地方 博主是加在了</p>
+<p><img src="http://pv4xsmh35.bkt.clouddn.com/8.png" alt=" "></p>
+<p><img src="http://pv4xsmh35.bkt.clouddn.com/9.png" alt=" "></p>
+<p>然后我们就可以看到我们的博客里面有音乐啦（hexo clean，hexo g，hexo s）</p>
+<p><img src="http://pv4xsmh35.bkt.clouddn.com/10.png" alt=" "></p>
+<h2 id="4-为博客添加访问量系统"><a href="#4-为博客添加访问量系统" class="headerlink" title="4.为博客添加访问量系统"></a>4.为博客添加访问量系统</h2><p>博主用到的是不蒜子</p>
+<p>打开\themes\yilia\layout_partial文件夹下的after-footer.ejs  </p>
+<p>加入 <code>&lt;script async src=&quot;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&quot;&gt;&lt;/script&gt;</code></p>
+<p>在最底部加入即可 </p>
+<p>然后在外面想要的地方加入<span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>即可</p>
+<p>博主是在\themes\yilia\layout_partial文件夹下的lleft-col.ejs加入</p>
+<p><img src="http://pv4xsmh35.bkt.clouddn.com/11.png" alt=" "></p>
+<p>然后保存</p>
+<p>hexo clean，hexo g，hexo s预览一下</p>
+<p>可以看到我们已经成功生成了 <img src="http://pv4xsmh35.bkt.clouddn.com/12.png" alt=" "><label style="color:red">(需要注意的是 hexo s后再本地预览，这个访问量会非常非常大，我们部署到github上就没问题了，大家不用担心)</label></p>
+<h2 id="5-添加评论系统"><a href="#5-添加评论系统" class="headerlink" title="5.添加评论系统"></a>5.添加评论系统</h2><p>然后来给我们的博客添加评论系统，既然是博客肯定需要大家一起讨论学习的，没有评论系统感觉没有了灵魂</p>
+<p>博主这里使用的是Gitment（Gitment 是基于 GitHub Issues 的评论系统）</p>
+<p>注册网址: <a href="https://github.com/settings/applications/new" target="_blank" rel="noopener">https://github.com/settings/applications/new</a></p>
+<p>大家已经把博客部署到github上了 相信也有帐号了，登录即可</p>
+<p>然后我们来注册 <img src="http://pv4xsmh35.bkt.clouddn.com/13.png" alt=" "></p>
+<p>Application name:博客名字<br>Homepage URL; 网站主页地址<br>Application description:描述，选填<br>Authorization callback URL: 填写我们的博客域名</p>
+<p>注册好之后我们拿到<img src="http://pv4xsmh35.bkt.clouddn.com/14.png" alt=" "></p>
+<p>然后我们打开主题下的配置文件 themes/yilia下的_config.yml</p>
+<p><img src="http://pv4xsmh35.bkt.clouddn.com/15.png" alt=" "></p>
+<p>找到这里第一个我们填写自己的githubid 第二个我们填写我们的个人博客地址，例如博主就是yyt1216.github.io（记得别加https  当时我在弄的时候加了https 评论系统就一直登录不上 卡了挺久的）</p>
+<p>最后的client_id,client_secret 我们就填写我们刚刚注册拿到的值就好了</p>
+<p>然后就ok了 我们打开我们的个人博客 进入文章初始化一下</p>
+<p><img src="http://pv4xsmh35.bkt.clouddn.com/16.png" alt=" ">（需要你先登录自己github账号）</p>
+<p><label style="color:red">（注意，你在本地预览的时候是没有的，需要部署到github上才能看到）</label></p>
+<p><img src="http://pv4xsmh35.bkt.clouddn.com/17.png" alt=" "></p>
+<p>然后我们就可以进行评论啦！是不是很赞呢</p>
+<p>我这边讲的都是按照我自己的喜好来设置的（例如音乐，访问量需要显示的地方 大家可以放在自己喜欢的地方）</p>
+<p><a href="https://yyt1216.github.io这是我的个人博客" target="_blank" rel="noopener">https://yyt1216.github.io这是我的个人博客</a> 欢迎大家来玩</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/05/24/如何个性化自己的hexo博客-主题，音乐，访问量，评论系统等/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-使用hexo-github搭建属于自己的个人博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
